@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time-Comment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Include moment.js for time formatting -->
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/moment.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="mb-4">Comment Section</h2>
+        <div class="card p-4">
+            <textarea id="textarea" class="form-control mb-3" rows="3" placeholder="Write your comment..."></textarea>
+            <button id="button" class="btn btn-primary">Post Comment</button>
+        </div>
+        <div class="row mt-2" >
+            <div class="col-md-12">
+                <!-- //<div class="typing text-success"></div> -->
+                <ul class="comment__box  list-unstyled"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
